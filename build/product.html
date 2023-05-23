@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="./css/style.css" />
+
+		<!-- iconscout -->
+		<link
+			rel="stylesheet"
+			href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+	</head>
+	<body class="min-h-screen font-inter">
+		<header class="w-full md:hidden">
+			<nav class="mx-auto max-w-6xl px-4 py-7">
+				<!-- mobile nav -->
+				<div class="">
+					<div class="flex items-center justify-between">
+						<!-- logo -->
+						<div class="">
+							<img class="w-[7rem]" src="./img/logo.png" alt="" />
+						</div>
+
+						<!-- icons-link -->
+						<div class="flex items-center gap-4">
+							<!-- phone -->
+							<i class="uil uil-phone-alt cursor-pointer text-xl"></i>
+							<!-- cart -->
+							<div class="relative cursor-pointer">
+								<i class="uil uil-shopping-bag text-2xl"></i>
+								<div
+									class="absolute right-0 top-2 grid aspect-square w-3 items-center justify-center rounded-full bg-pink">
+									<div class="grid items-center justify-center">
+										<p class="text-[8px] text-white">1</p>
+									</div>
+								</div>
+							</div>
+							<!-- hamburger -->
+							<div
+								id="nav-open"
+								class="flex w-fit cursor-pointer flex-col items-center justify-center gap-[3px] duration-700 ease-in-out">
+								<div class="h-0.5 w-5 bg-black"></div>
+								<div class="h-0.5 w-3 bg-black"></div>
+								<div class="h-0.5 w-1.5 bg-black"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div class="relative w-full">
+			<div class="mx-auto flex max-w-6xl px-4 py-7">
+				<!-- side-nav -->
+				<div class="hidden w-[20vw] px-4 md:flex lg:w-[22vw]">
+					<div>
+						<!-- image -->
+						<div>
+							<div class="">
+								<img class="w-[7rem]" src="./img/logo.png" alt="" />
+							</div>
+						</div>
+
+						<!-- text -->
+						<div class="mt-[4rem]">
+							<h1 class="text-xl font-medium">
+								Product . <span>Personalized shirt</span>
+							</h1>
+							<!-- links -->
+							<div class="mt-10 grid gap-5">
+								<div class="w-fit overflow-hidden rounded-xl bg-[#fcfcfc] p-4">
+									<img src="./img/pro.png" alt="" />
+								</div>
+								<div class="w-fit overflow-hidden rounded-xl bg-[#fcfcfc] p-4">
+									<img src="./img/pro.png" alt="" />
+								</div>
+								<div class="w-fit overflow-hidden rounded-xl bg-[#fcfcfc] p-4">
+									<img src="./img/pro.png" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- mobile side-nav -->
+				<div
+					id="nav-menu"
+					class="fixed left-0 top-0 z-[50] h-screen w-full -translate-x-full bg-gray-900/70 bg-white backdrop-blur duration-700 ease-in-out md:hidden">
+					<div
+						class="fixed left-0 top-0 z-[100] h-screen w-full bg-white px-5 py-7 backdrop-blur xs:w-[70%] md:hidden">
+						<div>
+							<!-- image -->
+							<div class="flex items-center justify-between">
+								<div class="">
+									<img class="w-[7rem]" src="./img/logo.png" alt="" />
+								</div>
+
+								<div class="cursor-pointer text-3xl" id="nav-close">
+									<i class="uil uil-times"></i>
+								</div>
+							</div>
+
+							<!-- text -->
+							<div class="mt-[4rem]">
+								<h1 class="text-xl font-medium">Explore</h1>
+
+								<!-- links -->
+								<div class="mt-10">
+									<ul class="grid gap-6">
+										<li>
+											<a href="" class="flex items-center gap-2">
+												<img class="h-4 w-4" src="./img/img-1.png" alt="" />
+												New Release
+											</a>
+										</li>
+										<li>
+											<a href="" class="flex items-center gap-2">
+												<img class="h-4 w-4" src="./img/img-2.png" alt="" />
+												Clothing
+											</a>
+										</li>
+										<li>
+											<a href="" class="flex items-center gap-2">
+												<img class="h-4 w-4" src="./img/img-3.png" alt="" />
+												Shoes
+											</a>
+										</li>
+										<li>
+											<a href="" class="flex items-center gap-2">
+												<img class="h-4 w-4" src="./img/img-4.png" alt="" />
+												Accessories
+											</a>
+										</li>
+										<li>
+											<a href="" class="flex items-center gap-2">
+												<img class="h-4 w-4" src="./img/img-5.png" alt="" />
+												Activewear
+											</a>
+										</li>
+										<li>
+											<a href="" class="flex items-center gap-2">
+												<img class="h-4 w-4" src="./img/img-6.png" alt="" />
+												Gift & Living
+											</a>
+										</li>
+										<li>
+											<a href="" class="flex items-center gap-2">
+												<img class="h-4 w-4" src="./img/img-7.png" alt="" />
+												Inspiration
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- main-nav -->
+				<div class="w-full pb-20">
+					<!-- header -->
+					<div class="hidden justify-between md:flex">
+						<!-- search -->
+						<form action="">
+							<input
+								type="text"
+								placeholder="Search Here"
+								class="bg-[#FCFCFC] px-6 py-2" />
+						</form>
+
+						<!-- icons -->
+						<div class="flex items-center gap-5">
+							<!-- phone -->
+							<i class="uil uil-phone-alt cursor-pointer text-xl"></i>
+							<!-- cart -->
+							<div class="relative w-fit cursor-pointer">
+								<i class="uil uil-shopping-bag text-2xl"></i>
+								<div
+									class="absolute right-0 top-2 grid aspect-square w-3 items-center justify-center rounded-full bg-pink">
+									<div class="grid items-center justify-center">
+										<p class="text-[8px] text-white">1</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- gallery -->
+					<div>
+						<div class="md:flex md:justify-between md:gap-[3rem]">
+							<!-- grid-1 -->
+							<div class="w-full">
+								<!-- images -->
+								<div class="relative bg-[#f6f6f6] py-[5rem]">
+									<div>
+										<!-- image -->
+										<div class="grid items-center justify-center">
+											<img class="w-[13rem]" src="./img/pro-1.png" alt="" />
+										</div>
+
+										<!-- video -->
+										<div
+											class="absolute bottom-2 left-2 rounded-full bg-white px-3 py-2">
+											<div class="flex items-center gap-3">
+												<div
+													class="grid h-8 w-8 items-center justify-center rounded-full bg-green">
+													<div>
+														<i class="uil uil-play"></i>
+													</div>
+												</div>
+												<p>PLAY VIDEO</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- also like -->
+							</div>
+
+							<!-- grid-2 -->
+							<div class="w-[45vw]">
+								<div>
+									<div>
+										<p>FASHION</p>
+										<h1>Personalized T-Shirt</h1>
+										<div>
+											<p>Size: XL</p>
+											<div>
+												<i class="uil uil-star"></i>
+												<i class="uil uil-star"></i>
+												<i class="uil uil-star"></i>
+												<i class="uil uil-star"></i>
+												<i class="uil uil-star"></i>
+											</div>
+										</div>
+										<div>
+											<p>Quantity</p>
+											<p>-<span>1</span>+</p>
+										</div>
+
+										<h1>$400.00</h1>
+
+										<div>
+											<p>description</p>
+
+											<p>
+												Sed ut perspiciatis unde omnis iste natus error sit
+												voluptatem accusantium doloremque laudantium, totam rem
+												aperiam, eaque ipsa quae ab illo inventore veritatis et
+												quasi
+											</p>
+
+											<p>tags</p>
+
+											<div>
+												<p>Vintage</p>
+												<p>Glam</p>
+												<p>Durable</p>
+												<p>Luxury</p>
+											</div>
+
+											<p>Select Size (US)</p>
+											<div>
+												<p>8</p>
+												<p>8.5</p>
+												<p>9</p>
+												<p>9.5</p>
+												<p>10</p>
+												<p>10</p>
+											</div>
+
+											<p>Select Color</p>
+											<div>
+												<div></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/app.js"></script>
+	</body>
+</html>

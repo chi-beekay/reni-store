@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="./css/style.css" />
+
+		<!-- iconscout -->
+		<link
+			rel="stylesheet"
+			href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+	</head>
+	<body class="min-h-screen font-inter">
+		<header class="w-full md:hidden">
+			<nav class="mx-auto max-w-6xl px-4 py-7">
+				<!-- mobile nav -->
+				<div class="">
+					<div class="flex items-center justify-between">
+						<!-- logo -->
+						<div class="">
+							<img class="w-[7rem]" src="./img/logo.png" alt="" />
+						</div>
+
+						<!-- icons-link -->
+						<div class="flex items-center gap-4">
+							<!-- phone -->
+							<i class="uil uil-phone-alt cursor-pointer text-xl"></i>
+							<!-- cart -->
+							<div class="relative cursor-pointer">
+								<i class="uil uil-shopping-bag text-2xl"></i>
+								<div
+									class="absolute right-0 top-2 grid aspect-square w-3 items-center justify-center rounded-full bg-pink">
+									<div class="grid items-center justify-center">
+										<p class="text-[8px] text-white">1</p>
+									</div>
+								</div>
+							</div>
+							<!-- hamburger -->
+							<div
+								id="nav-open"
+								class="flex w-fit cursor-pointer flex-col items-center justify-center gap-[3px] duration-700 ease-in-out">
+								<div class="h-0.5 w-5 bg-black"></div>
+								<div class="h-0.5 w-3 bg-black"></div>
+								<div class="h-0.5 w-1.5 bg-black"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div class="relative w-full">
+			<div class="mx-auto flex max-w-6xl px-4 py-7">
+				<!-- side-nav -->
+				<div class="hidden w-[30vw] px-4 md:flex lg:w-[22vw]">
+					<div>
+						<!-- image -->
+						<div>
+							<div class="">
+								<img class="w-[7rem]" src="./img/logo.png" alt="" />
+							</div>
+						</div>
+
+						<!-- text -->
+						<div class="mt-[4rem]">
+							<h1 class="text-xl font-medium">Explore</h1>
+							<!-- links -->
+							<div class="mt-10">
+								<ul class="grid gap-6">
+									<li>
+										<a
+											href="/"
+											class="flex items-center gap-2 hover:font-bold hover:text-blue">
+											<img class="h-4 w-4" src="./img/img-1.png" alt="" />
+											New Release
+										</a>
+									</li>
+									<li>
+										<a
+											href=""
+											class="flex items-center gap-2 hover:font-bold hover:text-blue">
+											<img class="h-4 w-4" src="./img/img-2.png" alt="" />
+											Clothing
+										</a>
+									</li>
+									<li>
+										<a
+											href=""
+											class="flex items-center gap-2 hover:font-bold hover:text-blue">
+											<img class="h-4 w-4" src="./img/img-3.png" alt="" />
+											Shoes
+										</a>
+									</li>
+									<li>
+										<a
+											href=""
+											class="flex items-center gap-2 hover:font-bold hover:text-blue">
+											<img class="h-4 w-4" src="./img/img-4.png" alt="" />
+											Accessories
+										</a>
+									</li>
+									<li>
+										<a
+											href=""
+											class="flex items-center gap-2 hover:font-bold hover:text-blue">
+											<img class="h-4 w-4" src="./img/img-5.png" alt="" />
+											Activewear
+										</a>
+									</li>
+									<li>
+										<a
+											href="gifts.html"
+											class="flex items-center gap-2 hover:font-bold hover:text-blue">
+											<img class="h-4 w-4" src="./img/img-6.png" alt="" />
+											Gift & Living
+										</a>
+									</li>
+									<li>
+										<a href="" class="flex items-center gap-2">
+											<img class="h-4 w-4" src="./img/img-7.png" alt="" />
+											Inspiration
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- mobile side-nav -->
+				<div
+					id="nav-menu"
+					class="fixed left-0 top-0 z-[50] h-screen w-full -translate-x-full bg-gray-900/70 bg-white backdrop-blur duration-700 ease-in-out md:hidden">
+					<div
+						class="fixed left-0 top-0 z-[100] h-screen w-full bg-white px-5 py-7 backdrop-blur xs:w-[70%] md:hidden">
+						<div>
+							<!-- image -->
+							<div class="flex items-center justify-between">
+								<div class="">
+									<img class="w-[7rem]" src="./img/logo.png" alt="" />
+								</div>
+
+								<div class="cursor-pointer text-3xl" id="nav-close">
+									<i class="uil uil-times"></i>
+								</div>
+							</div>
+
+							<!-- text -->
+							<div class="mt-[4rem]">
+								<h1 class="text-xl font-medium">Explore</h1>
+
+								<!-- links -->
+								<div class="mt-10">
+									<ul class="grid gap-6">
+										<li>
+											<a href="/" class="flex items-center gap-2">
+												<img class="h-4 w-4" src="./img/img-1.png" alt="" />
+												New Release
+											</a>
+										</li>
+										<li>
+											<a href="" class="flex items-center gap-2">
+												<img class="h-4 w-4" src="./img/img-2.png" alt="" />
+												Clothing
+											</a>
+										</li>
+										<li>
+											<a href="" class="flex items-center gap-2">
+												<img class="h-4 w-4" src="./img/img-3.png" alt="" />
+												Shoes
+											</a>
+										</li>
+										<li>
+											<a href="" class="flex items-center gap-2">
+												<img class="h-4 w-4" src="./img/img-4.png" alt="" />
+												Accessories
+											</a>
+										</li>
+										<li>
+											<a href="" class="flex items-center gap-2">
+												<img class="h-4 w-4" src="./img/img-5.png" alt="" />
+												Activewear
+											</a>
+										</li>
+										<li>
+											<a href="gifts.html" class="flex items-center gap-2">
+												<img class="h-4 w-4" src="./img/img-6.png" alt="" />
+												Gift & Living
+											</a>
+										</li>
+										<li>
+											<a href="" class="flex items-center gap-2">
+												<img class="h-4 w-4" src="./img/img-7.png" alt="" />
+												Inspiration
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- main-nav -->
+				<div class="w-full">
+					<!-- header -->
+					<div class="hidden justify-between md:flex">
+						<!-- search -->
+						<form action="">
+							<input
+								type="text"
+								placeholder="Search Here"
+								class="bg-[#FCFCFC] px-6 py-2" />
+						</form>
+
+						<!-- icons -->
+						<div class="flex items-center gap-5">
+							<!-- phone -->
+							<i class="uil uil-phone-alt cursor-pointer text-xl"></i>
+							<!-- cart -->
+							<div class="relative w-fit cursor-pointer">
+								<i class="uil uil-shopping-bag text-2xl"></i>
+								<div
+									class="absolute right-0 top-2 grid aspect-square w-3 items-center justify-center rounded-full bg-pink">
+									<div class="grid items-center justify-center">
+										<p class="text-[8px] text-white">1</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- main -->
+					<div>
+						<!-- main header -->
+						<div
+							class="mb-10 flex items-center justify-between md:mb-5 md:mt-10">
+							<div class="">
+								<div
+									class="mb-2 h-0.5 w-[7rem] bg-gradient-to-tr from-blue to-white"></div>
+								<h1 class="text-lg text-[#61626D]">New Release</h1>
+							</div>
+
+							<div class="flex text-[#8C8C8C]">
+								<i class="uil uil-ellipsis-v"></i>
+								<p>Filter</p>
+							</div>
+						</div>
+
+						<!-- main content -->
+						<div class="overflow-hidden">
+							<!-- hero -->
+							<div
+								class="relative rounded-2xl bg-lightBlue px-4 pb-[13rem] pt-[5rem] text-green sm:px-[3rem] md:py-[5rem]">
+								<!-- text -->
+								<div class="grid gap-4">
+									<div>
+										<h1
+											class="font-poppins text-2xl font-bold sm:text-4xl md:text-3xl lg:text-4xl">
+											ONLINE SHOPPING
+										</h1>
+										<h1
+											class="mt-2 font-poppins text-2xl font-bold sm:text-4xl md:text-3xl lg:text-4xl">
+											MADE EASIER
+										</h1>
+									</div>
+									<p class="text-xs font-medium leading-5 sm:w-[20rem]">
+										Show them the love this summer and get 50% off your purchase
+									</p>
+
+									<div class="relative mt-5">
+										<a
+											href=""
+											class="relative z-10 rounded-lg bg-green px-4 py-3 text-white"
+											>Show Now</a
+										>
+										<a
+											href=""
+											class="absolute -top-2.5 left-0 z-0 -rotate-[8deg] rounded-lg bg-pink px-4 py-2.5"
+											>Show Now</a
+										>
+									</div>
+								</div>
+
+								<!-- absolutes -->
+								<div
+									class="lg:right[9rem] -right-7 top-[14rem] z-20 hidden xs:absolute xs:block md:right-[3rem] md:top-7">
+									<img class="w-[16rem]" src="./img/heroM.png" alt="" />
+								</div>
+
+								<!-- absolutes -->
+								<div class="right-[3rem] top-0 hidden md:absolute md:block">
+									<img class="" src="./img/hero-6.png" alt="" />
+								</div>
+								<div
+									class="absolute bottom-[19rem] right-2 md:bottom-8 md:right-[3rem]">
+									<img class="w-[3.5rem]" src="./img/hero-7.png" alt="" />
+								</div>
+								<div class="bottom-0 left-[15rem] hidden md:absolute md:block">
+									<img class="" src="./img/hero-8.png" alt="" />
+								</div>
+								<div class="absolute bottom-12 md:left-[29rem]">
+									<img class="w-[5rem]" src="./img/hero-1.png" alt="" />
+								</div>
+								<div
+									class="absolute bottom-12 right-[40%] md:left-[29rem] md:hidden">
+									<img class="w-[5rem]" src="./img/hero-1.png" alt="" />
+								</div>
+								<div class="absolute left-0 top-0 hidden md:block">
+									<img class="" src="./img/hero-3.png" alt="" />
+								</div>
+								<div class="absolute left-[25rem] top-0 hidden md:block">
+									<img class="" src="./img/hero.png" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- gallery -->
+					<div>
+						<div class="">
+							<!-- header -->
+							<div class="my-10">
+								<div
+									class="mb-2 h-0.5 w-[7rem] bg-gradient-to-tr from-blue to-white"></div>
+								<h1 class="text-lg text-[#61626D]">Top Rated</h1>
+							</div>
+
+							<!-- grid -->
+							<div>
+								<div class="flex flex-row flex-wrap gap-4 gap-y-5">
+									<!-- sub-grid -->
+									<div>
+										<!-- image -->
+										<div class="overflow-hidden rounded-2xl">
+											<img src="./img/grid.png" alt="" />
+										</div>
+										<!-- text -->
+										<p class="mt-2 text-xs">Printed Gown</p>
+										<h1 class="mt-1 text-xl font-bold">$39.00</h1>
+									</div>
+									<!-- sub-grid -->
+									<div>
+										<!-- image -->
+										<div class="overflow-hidden rounded-2xl">
+											<img src="./img/grid.png" alt="" />
+										</div>
+										<!-- text -->
+										<p class="mt-2 text-xs">Printed Gown</p>
+										<h1 class="mt-1 text-xl font-bold">$39.00</h1>
+									</div>
+									<!-- sub-grid -->
+									<div>
+										<!-- image -->
+										<div class="overflow-hidden rounded-2xl">
+											<img src="./img/grid.png" alt="" />
+										</div>
+										<!-- text -->
+										<p class="mt-2 text-xs">Printed Gown</p>
+										<h1 class="mt-1 text-xl font-bold">$39.00</h1>
+									</div>
+									<!-- sub-grid -->
+									<div>
+										<!-- image -->
+										<div class="overflow-hidden rounded-2xl">
+											<img src="./img/grid-1.png" alt="" />
+										</div>
+										<!-- text -->
+										<p class="mt-2 text-xs">Printed Gown</p>
+										<h1 class="mt-1 text-xl font-bold">$39.00</h1>
+									</div>
+									<!-- sub-grid -->
+									<div>
+										<!-- image -->
+										<div class="overflow-hidden rounded-2xl">
+											<img src="./img/grid.png" alt="" />
+										</div>
+										<!-- text -->
+										<p class="mt-2 text-xs">Printed Gown</p>
+										<h1 class="mt-1 text-xl font-bold">$39.00</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="">
+							<!-- header -->
+							<div class="my-10">
+								<div
+									class="mb-2 h-0.5 w-[7rem] bg-gradient-to-tr from-blue to-white"></div>
+								<h1 class="text-lg text-[#61626D]">Top Deals</h1>
+							</div>
+
+							<!-- grid -->
+							<div>
+								<div class="flex flex-row flex-wrap gap-4 gap-y-5">
+									<!-- sub-grid -->
+									<div>
+										<!-- image -->
+										<div class="overflow-hidden rounded-2xl">
+											<img src="./img/grid.png" alt="" />
+										</div>
+										<!-- text -->
+										<p class="mt-2 text-xs">Printed Gown</p>
+										<h1 class="mt-1 text-xl font-bold">$39.00</h1>
+									</div>
+									<!-- sub-grid -->
+									<div>
+										<!-- image -->
+										<div class="overflow-hidden rounded-2xl">
+											<img src="./img/grid.png" alt="" />
+										</div>
+										<!-- text -->
+										<p class="mt-2 text-xs">Printed Gown</p>
+										<h1 class="mt-1 text-xl font-bold">$39.00</h1>
+									</div>
+									<!-- sub-grid -->
+									<div>
+										<!-- image -->
+										<div class="overflow-hidden rounded-2xl">
+											<img src="./img/grid.png" alt="" />
+										</div>
+										<!-- text -->
+										<p class="mt-2 text-xs">Printed Gown</p>
+										<h1 class="mt-1 text-xl font-bold">$39.00</h1>
+									</div>
+									<!-- sub-grid -->
+									<div>
+										<!-- image -->
+										<div class="overflow-hidden rounded-2xl">
+											<img src="./img/grid-1.png" alt="" />
+										</div>
+										<!-- text -->
+										<p class="mt-2 text-xs">Printed Gown</p>
+										<h1 class="mt-1 text-xl font-bold">$39.00</h1>
+									</div>
+									<!-- sub-grid -->
+									<div>
+										<!-- image -->
+										<div class="overflow-hidden rounded-2xl">
+											<img src="./img/grid.png" alt="" />
+										</div>
+										<!-- text -->
+										<p class="mt-2 text-xs">Printed Gown</p>
+										<h1 class="mt-1 text-xl font-bold">$39.00</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/app.js"></script>
+	</body>
+</html>
